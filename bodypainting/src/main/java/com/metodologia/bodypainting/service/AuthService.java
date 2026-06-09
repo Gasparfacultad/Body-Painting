@@ -6,6 +6,8 @@ import com.metodologia.bodypainting.exception.EmailAlreadyExistsException;
 import com.metodologia.bodypainting.model.Usuario;
 import com.metodologia.bodypainting.repository.UsuarioRepository;
 import lombok.RequiredArgsConstructor;
+
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -14,6 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class AuthService {
 
     private final UsuarioRepository usuarioRepository;
+    private final PasswordEncoder passwordEncoder;
 
     /**
      * Registra un nuevo usuario en el sistema.
@@ -36,7 +39,7 @@ public class AuthService {
                 .nombre(request.getNombre())
                 .apellido(request.getApellido())
                 .email(request.getEmail())
-                .password(request.getPassword())
+                .password(passwordEncoder.encode(request.getPassword()))
                 .build();
 
         // Guardar en la base de datos
