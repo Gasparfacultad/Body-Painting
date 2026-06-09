@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 /**
  * Controlador REST para registro, login y consulta del usuario autenticado.
  */
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/auth")
 @RequiredArgsConstructor
