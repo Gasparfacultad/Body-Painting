@@ -23,7 +23,7 @@ public class GlobalExceptionHandler {
         Map<String, Object> response = new HashMap<>();
         response.put("timestamp", LocalDateTime.now());
         response.put("status", HttpStatus.CONFLICT.value());
-        response.put("error", "Bad Request");
+        response.put("error", "Conflict");
         response.put("message", ex.getMessage());
         return new ResponseEntity<>(response, HttpStatus.CONFLICT);
     }
@@ -49,4 +49,14 @@ public class GlobalExceptionHandler {
 
         return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
     }
+    @ExceptionHandler(InvalidCredentialsException.class)
+    public ResponseEntity<Map<String, Object>> handleInvalidCredentials(InvalidCredentialsException ex) {
+        Map<String, Object> response = new HashMap<>();
+        response.put("timestamp", LocalDateTime.now());
+        response.put("status", HttpStatus.UNAUTHORIZED.value());
+        response.put("error", "Unauthorized");
+        response.put("message", ex.getMessage());
+        return new ResponseEntity<>(response, HttpStatus.UNAUTHORIZED);
+    }
+    
 }
