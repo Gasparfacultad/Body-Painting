@@ -1,0 +1,16 @@
+C:\Users\Usuario\Desktop\soft met\Body-Painting\bodypainting\src\main\java\com\metodologia\bodypainting\BodypaintingApplication.java
+C:\Users\Usuario\Desktop\soft met\Body-Painting\bodypainting\src\main\java\com\metodologia\bodypainting\config\SecurityConfig.java
+C:\Users\Usuario\Desktop\soft met\Body-Painting\bodypainting\src\main\java\com\metodologia\bodypainting\controller\AuthController.java
+C:\Users\Usuario\Desktop\soft met\Body-Painting\bodypainting\src\main\java\com\metodologia\bodypainting\dto\LoginRequestDTO.java
+C:\Users\Usuario\Desktop\soft met\Body-Painting\bodypainting\src\main\java\com\metodologia\bodypainting\dto\LoginResponseDTO.java
+C:\Users\Usuario\Desktop\soft met\Body-Painting\bodypainting\src\main\java\com\metodologia\bodypainting\dto\RegistroRequestDTO.java
+C:\Users\Usuario\Desktop\soft met\Body-Painting\bodypainting\src\main\java\com\metodologia\bodypainting\dto\UsuarioResponseDTO.java
+C:\Users\Usuario\Desktop\soft met\Body-Painting\bodypainting\src\main\java\com\metodologia\bodypainting\exception\EmailAlreadyExistsException.java
+C:\Users\Usuario\Desktop\soft met\Body-Painting\bodypainting\src\main\java\com\metodologia\bodypainting\exception\GlobalExceptionHandler.java
+C:\Users\Usuario\Desktop\soft met\Body-Painting\bodypainting\src\main\java\com\metodologia\bodypainting\exception\InvalidCredentialsException.java
+C:\Users\Usuario\Desktop\soft met\Body-Painting\bodypainting\src\main\java\com\metodologia\bodypainting\model\Usuario.java
+C:\Users\Usuario\Desktop\soft met\Body-Painting\bodypainting\src\main\java\com\metodologia\bodypainting\repository\UsuarioRepository.java
+C:\Users\Usuario\Desktop\soft met\Body-Painting\bodypainting\src\main\java\com\metodologia\bodypainting\security\JwtAuthenticationEntryPoint.java
+C:\Users\Usuario\Desktop\soft met\Body-Painting\bodypainting\src\main\java\com\metodologia\bodypainting\security\JwtAuthenticationFilter.java
+C:\Users\Usuario\Desktop\soft met\Body-Painting\bodypainting\src\main\java\com\metodologia\bodypainting\security\JwtService.java
+C:\Users\Usuario\Desktop\soft met\Body-Painting\bodypainting\src\main\java\com\metodologia\bodypainting\service\AuthService.java
