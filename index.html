@@ -43,8 +43,8 @@
       </div>
       <div class="form-row">
         <div class="form-group">
-          <label for="pass-reg">Contraseña</label>
-          <input type="password" id="pass-reg" placeholder="••••••••"/>
+          <label for="pass-rep">Contraseña</label>
+          <input type="password" id="pass-rep" placeholder="••••••••"/>
         </div>
       </div>
     </div>
@@ -52,34 +52,58 @@
     <p id="registerError"></p>
     <p id="registerSuccess"></p>
 
+    <button class="form-submit" type="submit">Crear mi cuenta</button>
+
   </form>
 
-
-      <button class="form-submit" type="submit">Crear mi cuenta</button>
     </div>
 
     <!-- LOGIN -->
-    <div class="form-panel login-panel">
+  <div class="form-panel login-panel">
+
+    <form id="loginForm">
+
       <div class="login-icon">🔐</div>
+
       <h2>Bienvenido</h2>
-      <p class="form-sub">Ingresá a tu cuenta para ver tus pedidos, cupones y más.</p>
+
+      <p class="form-sub">
+        Ingresá a tu cuenta para ver tus pedidos, cupones y más.
+      </p>
 
       <div class="form-group">
         <label for="email-log">Correo electrónico</label>
-        <input type="email" id="email-log" placeholder="mail@ejemplo.com"/>
+        <input
+          type="email"
+          id="email-log"
+          placeholder="mail@ejemplo.com"
+        />
       </div>
 
       <div class="form-group">
         <label for="pass-log">Contraseña</label>
-        <input type="password" id="pass-log" placeholder="••••••••"/>
+        <input
+          type="password"
+          id="pass-log"
+          placeholder="••••••••"
+        />
       </div>
 
       <div style="text-align:right;margin-top:-8px;margin-bottom:24px">
-        <a href="#" style="font-size:12px;color:var(--muted);text-decoration:none">¿Olvidaste tu contraseña?</a>
+        <a href="#" style="font-size:12px;color:var(--muted);text-decoration:none">
+          ¿Olvidaste tu contraseña?
+        </a>
       </div>
 
-      <button class="form-submit" type="button">Iniciar sesión</button>
-    </div>
+      <p id="loginError"></p>
+
+      <button class="form-submit" type="submit">
+        Iniciar sesión
+      </button>
+
+    </form>
+
+  </div>
 
   </div>
 </section>
@@ -91,6 +115,24 @@
   <p>Grupo 4 - UTN FRVVM </p>
 </footer>
 
+<!-- Modal Registro Exitoso -->
+<div id="modalRegistro" class="modal">
+    <div class="modal-content">
+        <h3>✅ Registro exitoso</h3>
+        <p>Tu cuenta fue creada correctamente.</p>
+        <button id="btnRegistro">Aceptar</button>
+    </div>
+</div>
+
+<!-- Modal Login Exitoso -->
+<div id="modalLogin" class="modal">
+    <div class="modal-content">
+        <h3>🎉 Bienvenido</h3>
+        <p>Inicio de sesión realizado correctamente.</p>
+        <button id="btnLogin">Continuar</button>
+    </div>
+</div>
+
 <script>
   document.querySelectorAll('.pay-opt').forEach(opt=>{
     opt.addEventListener('click',function(){
@@ -101,6 +143,8 @@
 </script>
 
 <script src="/Body-Painting/registro.js"></script>
+<script src="/Body-Painting/exito.js"></script>
+<script src="/Body-Painting/login.js"></script>
 
 </body>
 </html>

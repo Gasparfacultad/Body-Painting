@@ -1,8 +1,9 @@
-const form = document.getElementById("registerForm");
+const registerForm = document.getElementById("registerForm");
 const errorElement = document.getElementById("registerError");
 const successElement = document.getElementById("registerSuccess");
 
-form.addEventListener("submit", async (e) => {
+if (registerForm) {
+registerForm.addEventListener("submit", async (e) => {
     e.preventDefault();
 
     errorElement.textContent = "";
@@ -57,12 +58,12 @@ form.addEventListener("submit", async (e) => {
             );
         }
 
-        successElement.textContent = "Usuario registrado correctamente.";
+        mostrarModalRegistro();
 
-        form.reset();
+        registerForm.reset();
 
         setTimeout(() => {
-            window.location.href = "login.html";
+            window.location.href = "index.html";
         }, 1500);
 
     } catch (error) {
@@ -70,3 +71,4 @@ form.addEventListener("submit", async (e) => {
         console.error(error);
     }
 });
+}
